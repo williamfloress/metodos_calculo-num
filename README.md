@@ -1,5 +1,13 @@
 # Calculo Numerico
 
+Proyecto Universitario de Calculo Numerico
+Universidad de Oriente - 2026
+Realizado por:
+Br. William Flores
+CI: 24.107.343
+
+---
+
 Proyecto de metodos numericos en Python. Implementa tecnicas para aproximar raices de ecuaciones y calcular integrales definidas cuando no existen soluciones analiticas.
 
 ---
@@ -105,6 +113,8 @@ Se mostrara un menu principal con cinco opciones:
 
 Puedes resolver varios ejercicios seguidos. Tras cada resultado, volveras al submenu del metodo para elegir otro ejercicio o volver al menu principal. El script se mantiene en ejecucion hasta que elijas Salir.
 
+**Nota sobre funciones predefinidas**: el menu interactivo solo ejecuta ejercicios incluidos en el script. No permite escribir funciones personalizadas desde la consola.
+
 ### Opcion 3: Usar los modulos directamente
 
 Puedes importar cada modulo y llamar a sus funciones:
@@ -133,6 +143,8 @@ resultado = integracion.integrar(lambda x: x**2, 0, 1, n=50, metodo="punto_medio
 # Polinomio de Taylor (requiere sympy; usar importlib por el guion en el nombre del archivo)
 ```
 
+**Aqui si puedes definir tus propias funciones** en Python y pasarlas como `lambda` o como funciones normales, segun el metodo.
+
 ### Opcion 4: Agregar o modificar ejercicios
 
 Edita `metodos/pruebas/EJERCICIOS_METODOS_NUMERICOS.md` para anadir nuevos ejercicios o cambiar los existentes. Las tablas deben mantener el mismo formato (columnas separadas por |) y usar expresiones que el `test.py` pueda interpretar. Si usas una funcion nueva, debes registrarla en los diccionarios `FUNCIONES` y `DERIVADAS` dentro de `metodos/test.py`.
@@ -154,8 +166,8 @@ pip install sympy
 
 ---
 
-Proyecto Universitario de Calculo Numerico
-Universidad de Oriente - 2026
-Realizado por:
-Br. William Flores
-CI: 24.107.343
+MVP adicional (calculadora virtual con frontend):
+Actualmente solo funciona con los metodos de biseccion y Newton-Raphson.
+Se encuentra en trabajo de implementacion para incluir los nuevos metodos aprendidos en clase.
+Repositorio: https://github.com/williamfloress/numeric-calculator
+Demo: https://numeric-calculator-eight.vercel.app/

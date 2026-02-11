@@ -5,6 +5,7 @@ import math
 
 def riemann_izquierdo(f, a, b, n):
     """Aproximación por sumas de Riemann usando el extremo izquierdo.
+    Evalúa f(x) en el inicio de cada subintervalo y suma áreas de rectángulos.
 
     Args:
         f (callable): función a integrar.
@@ -25,6 +26,7 @@ def riemann_izquierdo(f, a, b, n):
 
 def riemann_derecho(f, a, b, n):
     """Aproximación por sumas de Riemann usando el extremo derecho.
+    Evalúa f(x) al final de cada subintervalo y suma áreas de rectángulos.
 
     Args:
         f (callable): función a integrar.
@@ -45,6 +47,7 @@ def riemann_derecho(f, a, b, n):
 
 def riemann_punto_medio(f, a, b, n):
     """Aproximación por sumas de Riemann usando el punto medio.
+    Evalúa f(x) en el centro de cada subintervalo para mejorar la precisión.
 
     Args:
         f (callable): función a integrar.
@@ -65,6 +68,7 @@ def riemann_punto_medio(f, a, b, n):
 
 def integrar(f, a, b, n=100, metodo="punto_medio"):
     """Integración numérica por el método de Riemann.
+    Selecciona la variante (izquierdo, derecho o punto medio) y calcula la suma.
 
     Args:
         f (callable): función a integrar.
